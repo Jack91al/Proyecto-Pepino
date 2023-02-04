@@ -6,18 +6,19 @@ public class Puertas : MonoBehaviour
 {
     public float time;
 
+    public bool iAmSpawners;
     public GameObject spawners;
-    public GameObject Puerta;
+    public Apuerta Puerta;
 
-    enum PlayerState
-    {
-        Planting
-    }
+
 
     // Start is called before the first frame update
     void Start()
     {
-        spawners.SetActive(false);
+        if (iAmSpawners)
+        {
+            spawners.SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -25,25 +26,21 @@ public class Puertas : MonoBehaviour
     {
         
     }
-    void OnTriggerEnter2D(Collider2D col)
+    void OnTriggerStay2D(Collider2D col)
     {
-        float IniTime;
-
-        IniTime = Time.deltaTime;
-        if ((col.gameObject.tag == "Player"))
+        if (col.gameObject.tag == "Player")
         {
-            if (Input.GetKeyDown(KeyCode.S))
+            if (Input.GetKey(KeyCode.S))
             {
-                spawners.SetActive(true);
+                col.gameObject.SendMessage("planting");
                 Debug.Log("AAAAAAA");
-                col.gameObject.SendMessage("StatusSwitch", PlayerState.Planting);
-                if (col.gameObject.tag == "" && IniTime <= time)
+                if (iAmSpawners)
                 {
-                    col.gameObject.SendMessage("Abrir");
-                    Debug.Log("AAAAAAA");
+                    spawners.SetActive(true);
                 }
-            }
+                Puerta.Abrir();
 
+            }
         }
     }
 }
