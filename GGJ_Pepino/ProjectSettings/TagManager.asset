@@ -5,11 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - Musik
+  - puerta
+  - Ground
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Suelo
+  - whatIsGround
   - Water
   - UI
   - 
@@ -39,6 +41,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Fondo
+    uniqueID: 1339900399
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
