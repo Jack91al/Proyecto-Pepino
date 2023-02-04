@@ -1,18 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class GameManager : MonoBehaviour
 {
-    public enum Clima
+    public static GameManager instance;
+
+    private void Awake()
     {
-        Normal,
-        Fuego,
-        Hielo,
-        Roca
+        instance = this;
     }
 
-    public Clima climaActual;
+
+    
 
 
 
@@ -27,4 +28,7 @@ public class GameManager : MonoBehaviour
     {
         
     }
+
+    
+
 }
