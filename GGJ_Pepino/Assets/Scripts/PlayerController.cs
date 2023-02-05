@@ -19,12 +19,20 @@ public class PlayerController : MonoBehaviour
         Planting
     }
 
-    public PlayerState playerState;
+    public enum PlayerPower
+    {
+        Normal,
+        Fuego,
+        Hielo,
+        Tierra
+    }
 
+    public PlayerState playerState;
+    public PlayerPower playerPower;
     // Start is called before the first frame update
     void Start()
     {
-        PlayerController.instance.StatusSwitch(PlayerState.Idle);
+        
     }
 
     // Update is called once per frame
@@ -40,22 +48,24 @@ public class PlayerController : MonoBehaviour
         switch (playerState)
         {
             case PlayerState.Idle:
-                
+                MovePersonaje.instance.IAmMove = true;
                 break;
 
             case PlayerState.Running:
-
+                MovePersonaje.instance.IAmMove = true;
                 break;
 
             case PlayerState.Jumping:
-
+                MovePersonaje.instance.IAmMove = true;
                 break;
 
             case PlayerState.Attack:
-
+                MovePersonaje.instance.IAmMove = false;
                 break;
 
             case PlayerState.Planting:
+
+                MovePersonaje.instance.IAmMove = false;
 
                 break;
 

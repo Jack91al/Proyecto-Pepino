@@ -4,21 +4,15 @@ using UnityEngine;
 
 public class Puertas : MonoBehaviour
 {
-    public float time;
 
-    public bool iAmSpawners;
-    public GameObject spawners;
-    public Apuerta Puerta;
-
-
+    public bool FireDoor;
+    public bool iceDoor;
+    public bool earthDoor;
 
     // Start is called before the first frame update
     void Start()
     {
-        if (iAmSpawners)
-        {
-            spawners.SetActive(false);
-        }
+
     }
 
     // Update is called once per frame
@@ -28,17 +22,27 @@ public class Puertas : MonoBehaviour
     }
     void OnTriggerStay2D(Collider2D col)
     {
-        if (col.gameObject.tag == "Player")
+        if (col.gameObject.tag == "Player" && FireDoor)
         {
             if (Input.GetKey(KeyCode.S))
             {
-                col.gameObject.SendMessage("planting");
-                Debug.Log("AAAAAAA");
-                if (iAmSpawners)
-                {
-                    spawners.SetActive(true);
-                }
-                Puerta.Abrir();
+                col.gameObject.SendMessage("plantingEarth");
+
+            }
+        }
+        if (col.gameObject.tag == "Player" && iceDoor)
+        {
+            if (Input.GetKey(KeyCode.S))
+            {
+                col.gameObject.SendMessage("plantingFire");
+
+            }
+        }
+        if (col.gameObject.tag == "Player" && earthDoor)
+        {
+            if (Input.GetKey(KeyCode.S))
+            {
+                col.gameObject.SendMessage("plantingIce");
 
             }
         }

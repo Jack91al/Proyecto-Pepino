@@ -6,6 +6,14 @@ using UnityEngine.UI;
 
 public class MovePersonaje : MonoBehaviour
 {
+    public static MovePersonaje instance;
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
+
     public float vida;
     private bool recivirDmg;
     public float SpeedWalk;
