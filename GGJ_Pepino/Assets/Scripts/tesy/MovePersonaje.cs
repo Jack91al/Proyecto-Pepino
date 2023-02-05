@@ -42,8 +42,22 @@ public class MovePersonaje : MonoBehaviour
 
     private bool FacingRight;
 
-    private Animator anim;
+    [Header("Animaciones")]
+
+    public Animator animActual;
+
+    public Animator animNormal;
+    public Animator animFuego;
+    public Animator animHielo;
+    public Animator animRoca;
+
+    [Tooltip("X es powerup, Y es vida")]
+    //0: normal, 1: fuego, 2: hielo, 3: roca
+    public Animator[,] pepinos = new Animator[4, 3];
+    int poder;
+
     private CapsuleCollider2D coll;
+
 
     public bool IAmMove;
     private bool IAmStun = false;
@@ -103,23 +117,35 @@ public class MovePersonaje : MonoBehaviour
             if(HorInput != 0)
             {
                 Body.velocity = new Vector2(HorInput, Body.velocity.y);
+                
             }
             else
             {
                 Body.velocity = new Vector2(0, Body.velocity.y);
             }
 
-            
+            if (IAmGround && HorInput != 0)
+            {
+                PlayerController.instance.StatusSwitch(PlayerController.PlayerState.Running);
+            }
+
+            if (IAmGround && HorInput == 0)
+            {
+                PlayerController.instance.StatusSwitch(PlayerController.PlayerState.Idle);
+            }
+
+
             if (IAmGround)
             {
                 NumJump = 0;
-                //anim.SetBool(InGroundID, true);
             }
+
+
             if (JumpInput && IAmGround)
             {
                 NumJump++;
                 Body.AddForce(Vector2.up * ImpulseJump);
-                //anim.SetBool(InGroundID, false);
+                PlayerController.instance.StatusSwitch(PlayerController.PlayerState.Jumping);
 
             }
             if (!IAmGround && NumJump > 0 && NumJump < LimitJump && JumpInput)
@@ -180,6 +206,45 @@ public class MovePersonaje : MonoBehaviour
             Instantiate(DeadEffect, transform.position, transform.rotation);
             Destroy(gameObject);
         }
+    }
+
+    public void SetAnimation(string animBool)
+    {
+        animActual.SetBool("Idle", false);
+        animActual.SetBool("Walk", false);
+        animActual.SetBool("Jump", false);
+        animActual.SetBool("Planting", false);
+        animActual.SetBool("Attack", false);
+        animActual.SetBool("Death", false);
+
+        animActual.SetBool(animBool, true);
+    }
+
+    public void UpdateAnimator()
+    {
+        
+
+        switch(PlayerController.instance.playerPower)
+        {
+            case PlayerController.PlayerPower.Normal:
+                poder = 0;
+                break;
+
+            case PlayerController.PlayerPower.Fuego:
+                poder = 1;
+                break;
+
+            case PlayerController.PlayerPower.Hielo:
+                poder = 2;
+                break;
+
+            case PlayerController.PlayerPower.Roca:
+                poder = 3;
+                break;
+        }
+
+        animActual = pepinos[poder, (int)vida];
+
     }
 
 }

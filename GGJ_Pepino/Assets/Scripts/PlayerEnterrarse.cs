@@ -6,7 +6,7 @@ public class PlayerEnterrarse : MonoBehaviour
 {
     public float timer, timerMaxTime;
 
-    public bool activated;
+    public bool activated, used;
 
     // Start is called before the first frame update
     void Start()
@@ -19,10 +19,10 @@ public class PlayerEnterrarse : MonoBehaviour
     {
         if(timer > 0)
         {
-            timer = -Time.deltaTime;
+            timer -= 1 * Time.deltaTime;
         }
 
-        if(timer < 0)
+        if(timer <= 0 && activated && used)
         {
             switch (PlayerController.instance.playerPower)
             {
@@ -31,6 +31,7 @@ public class PlayerEnterrarse : MonoBehaviour
                     GridManager.instance.CambiarClima(GridManager.Clima.Fuego);
 
                     MovePersonaje.instance.vida = MovePersonaje.instance.Maxvida;
+                    PlayerController.instance.StatusSwitch(PlayerController.PlayerState.Idle);
                     break;
 
                 case PlayerController.PlayerPower.Hielo:
@@ -38,36 +39,54 @@ public class PlayerEnterrarse : MonoBehaviour
                         GridManager.instance.CambiarClima(GridManager.Clima.Hielo);
 
                     MovePersonaje.instance.vida = MovePersonaje.instance.Maxvida;
+                    PlayerController.instance.StatusSwitch(PlayerController.PlayerState.Idle);
                     break;
 
-                case PlayerController.PlayerPower.Tierra:
+                case PlayerController.PlayerPower.Roca:
                     if (GridManager.instance.climaActual == GridManager.Clima.Roca)
                         GridManager.instance.CambiarClima(GridManager.Clima.Roca);
 
                     MovePersonaje.instance.vida = MovePersonaje.instance.Maxvida;
+                    PlayerController.instance.StatusSwitch(PlayerController.PlayerState.Idle);
                     break;
 
                 case PlayerController.PlayerPower.Normal:
                     MovePersonaje.instance.vida = MovePersonaje.instance.Maxvida;
+                    PlayerController.instance.StatusSwitch(PlayerController.PlayerState.Idle);
                     break;
             }
-
-
+            print("Done");
             timer = 0;
         }
-    }
 
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if(collision.tag == "Player" && Input.GetKeyDown(KeyCode.S))
+        if (activated && !used && Input.GetKeyDown(KeyCode.S))
         {
-            PlayerController.instance.StatusSwitch(PlayerController.PlayerState.Planting);
-
-            Debug.Log("AAAAAAA");
+            used = true;
 
             timer = timerMaxTime;
 
-            
+            PlayerController.instance.StatusSwitch(PlayerController.PlayerState.Planting);           
+
+            Debug.Log("AAAAAAA");
+          
+        }
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        if(collision.tag == "Player")
+        {
+            activated = true;             
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            activated = false;
         }
     }
 

@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library:
+  - m_Name: Idle
+    m_Hash: 1008081451
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: PepinoIdle_0
+      m_Hash: 952639637
+      m_Sprite: {fileID: 2025870860, guid: 602803c5487f5264ebbf3f3c1b63bb75, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2025870860, guid: 602803c5487f5264ebbf3f3c1b63bb75, type: 3}
+    - m_Name: PepinoIdle_1
+      m_Hash: 265228291
+      m_Sprite: {fileID: 423250269, guid: 602803c5487f5264ebbf3f3c1b63bb75, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 423250269, guid: 602803c5487f5264ebbf3f3c1b63bb75, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 2
+  - m_Name: Walk
+    m_Hash: 765711723
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: PepinoWalk_0
+      m_Hash: 57336068
+      m_Sprite: {fileID: 752536696, guid: 2c2eef3558b0fe743b6014133d2e00e6, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 752536696, guid: 2c2eef3558b0fe743b6014133d2e00e6, type: 3}
+    - m_Name: PepinoWalk_1
+      m_Hash: 879612306
+      m_Sprite: {fileID: 1401593948, guid: 2c2eef3558b0fe743b6014133d2e00e6, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1401593948, guid: 2c2eef3558b0fe743b6014133d2e00e6, type: 3}
+    - m_Name: PepinoWalk_2
+      m_Hash: 761561128
+      m_Sprite: {fileID: 482609986, guid: 2c2eef3558b0fe743b6014133d2e00e6, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 482609986, guid: 2c2eef3558b0fe743b6014133d2e00e6, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 3
+  - m_Name: Jump
+    m_Hash: 125937960
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: PepinoJump
+      m_Hash: 827149041
+      m_Sprite: {fileID: 21300000, guid: 64bb236727970794ba49c1fd7ec42d5b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: 64bb236727970794ba49c1fd7ec42d5b, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
+  - m_Name: Attack
+    m_Hash: 7088141
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: PepinoAttack
+      m_Hash: 697635669
+      m_Sprite: {fileID: 21300000, guid: 8a267438d1e189f41834a00861b37404, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: 8a267438d1e189f41834a00861b37404, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
+  - m_Name: Planting
+    m_Hash: 306932315
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: PepinoPlanting
+      m_Hash: 287456730
+      m_Sprite: {fileID: 21300000, guid: e81cd5694531cad4b9461edcc69f4bf8, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: e81cd5694531cad4b9461edcc69f4bf8, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
+  - m_Name: Death
+    m_Hash: 646380074
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: PepinoDeath_0
+      m_Hash: 234467993
+      m_Sprite: {fileID: -892654779, guid: e8fff4ad55752aa43a9e6d2f441f79a0, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -892654779, guid: e8fff4ad55752aa43a9e6d2f441f79a0, type: 3}
+    - m_Name: PepinoDeath_1
+      m_Hash: 989757967
+      m_Sprite: {fileID: 859481828, guid: e8fff4ad55752aa43a9e6d2f441f79a0, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 859481828, guid: e8fff4ad55752aa43a9e6d2f441f79a0, type: 3}
+    - m_Name: PepinoDeath_2
+      m_Hash: 603444149
+      m_Sprite: {fileID: -1644664681, guid: e8fff4ad55752aa43a9e6d2f441f79a0, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1644664681, guid: e8fff4ad55752aa43a9e6d2f441f79a0, type: 3}
+    - m_Name: PepinoDeath_3
+      m_Hash: 351331107
+      m_Sprite: {fileID: -1920047430, guid: e8fff4ad55752aa43a9e6d2f441f79a0, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1920047430, guid: e8fff4ad55752aa43a9e6d2f441f79a0, type: 3}
+    - m_Name: PepinoDeath_4
+      m_Hash: 177501824
+      m_Sprite: {fileID: 1177608479, guid: e8fff4ad55752aa43a9e6d2f441f79a0, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1177608479, guid: e8fff4ad55752aa43a9e6d2f441f79a0, type: 3}
+    - m_Name: PepinoDeath_5
+      m_Hash: 1033061910
+      m_Sprite: {fileID: 119992464, guid: e8fff4ad55752aa43a9e6d2f441f79a0, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 119992464, guid: e8fff4ad55752aa43a9e6d2f441f79a0, type: 3}
+    - m_Name: PepinoDeath_6
+      m_Hash: 614078380
+      m_Sprite: {fileID: 1933933083, guid: e8fff4ad55752aa43a9e6d2f441f79a0, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1933933083, guid: e8fff4ad55752aa43a9e6d2f441f79a0, type: 3}
+    - m_Name: PepinoDeath_7
+      m_Hash: 329066298
+      m_Sprite: {fileID: 1542678876, guid: e8fff4ad55752aa43a9e6d2f441f79a0, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1542678876, guid: e8fff4ad55752aa43a9e6d2f441f79a0, type: 3}
+    - m_Name: PepinoDeath_8
+      m_Hash: 52574891
+      m_Sprite: {fileID: -601927504, guid: e8fff4ad55752aa43a9e6d2f441f79a0, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -601927504, guid: e8fff4ad55752aa43a9e6d2f441f79a0, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 9
+  m_PrimaryLibraryGUID: 
