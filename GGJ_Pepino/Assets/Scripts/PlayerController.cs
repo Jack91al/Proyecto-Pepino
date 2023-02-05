@@ -30,6 +30,9 @@ public class PlayerController : MonoBehaviour
 
     public PlayerState playerState;
     public PlayerPower playerPower;
+
+    public float attackTimer;
+    public float attackTimerMax = 0.1f;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +43,18 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         SwitchAnimator();
+
+        if(attackTimer > 0)
+        {
+            attackTimer -= Time.deltaTime; 
+        }
+
+        if(attackTimer <= 0.01f && playerState == PlayerState.Attack)
+        {
+            StatusSwitch(PlayerState.Idle);
+            attackTimer = 0;
+        }
+
     }
 
     public void StatusSwitch(PlayerState newState)
@@ -67,6 +82,9 @@ public class PlayerController : MonoBehaviour
             case PlayerState.Attack:
                 MovePersonaje.instance.IAmMove = false;
                 MovePersonaje.instance.SetAnimation("Attack");
+
+                attackTimer = attackTimerMax;
+
                 break;
 
             case PlayerState.Planting:
@@ -140,5 +158,7 @@ public class PlayerController : MonoBehaviour
     {
         PlayerController.instance.StatusSwitch(PlayerState.Idle);
     }
+
+
 
 }
