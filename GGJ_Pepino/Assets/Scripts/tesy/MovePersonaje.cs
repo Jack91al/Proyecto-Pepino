@@ -51,6 +51,8 @@ public class MovePersonaje : MonoBehaviour
     public Animator animHielo;
     public Animator animRoca;
 
+    
+
     [Tooltip("X es powerup, Y es vida")]
     //0: normal, 1: fuego, 2: hielo, 3: roca
     public Animator[,] pepinos = new Animator[4, 3];
@@ -107,6 +109,10 @@ public class MovePersonaje : MonoBehaviour
             FacingRight = true;
         }
 
+        if(Input.GetKeyDown(KeyCode.Space) && PlayerController.instance.playerState != PlayerController.PlayerState.Attack)
+        {
+            PlayerController.instance.StatusSwitch(PlayerController.PlayerState.Attack);
+        }
 
     }
     //=========================================
@@ -223,7 +229,6 @@ public class MovePersonaje : MonoBehaviour
     public void UpdateAnimator()
     {
         
-
         switch(PlayerController.instance.playerPower)
         {
             case PlayerController.PlayerPower.Normal:
@@ -243,7 +248,7 @@ public class MovePersonaje : MonoBehaviour
                 break;
         }
 
-        animActual = pepinos[poder, (int)vida];
+        animActual = pepinos[poder, (int)vida];       
 
     }
 

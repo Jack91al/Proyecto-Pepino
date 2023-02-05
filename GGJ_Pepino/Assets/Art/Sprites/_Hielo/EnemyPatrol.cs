@@ -13,7 +13,7 @@ public class EnemyPatrol : MonoBehaviour
 
 	private Rigidbody2D _rigidbody;
 	private Animator _animator;
-	private Weapon _weapon;
+	//private Weapon _weapon;
 	private AudioSource _audio;
 
 	// Movement
@@ -26,7 +26,7 @@ public class EnemyPatrol : MonoBehaviour
 	{
 		_rigidbody = GetComponent<Rigidbody2D>();
 		_animator = GetComponent<Animator>();
-		_weapon = GetComponentInChildren<Weapon>();
+		//_weapon = GetComponentInChildren<Weapon>();
 		_audio = GetComponent<AudioSource>();
 	}
 
@@ -105,13 +105,13 @@ public class EnemyPatrol : MonoBehaviour
 		_isAttacking = false;
 	}
 
-	void CanShoot()
+	/*void CanShoot()
 	{
 		if (_weapon != null) {
 			_weapon.Shoot();
 			_audio.Play();
 		}
-	}
+	} */
 
 	private void OnEnable()
 	{
