@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.18f1 (3129e69bc0c7) revision 3221990'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19044) 64bit CoreSingleLanguage' Language: 'es' Physical Memory: 7991 MB
+OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'en' Physical Memory: 16236 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2021.3.18f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/matia/OneDrive/Documentos/GitHub/Proyecto-Pepino/GGJ_Pepino
+C:/Users/Juan Pablo/Documents/GitHub/Proyecto-Pepino/GGJ_Pepino
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49187
-Successfully changed project path to: C:/Users/matia/OneDrive/Documentos/GitHub/Proyecto-Pepino/GGJ_Pepino
-C:/Users/matia/OneDrive/Documentos/GitHub/Proyecto-Pepino/GGJ_Pepino
+58174
+Successfully changed project path to: C:/Users/Juan Pablo/Documents/GitHub/Proyecto-Pepino/GGJ_Pepino
+C:/Users/Juan Pablo/Documents/GitHub/Proyecto-Pepino/GGJ_Pepino
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,109 +47,109 @@ C:/Users/matia/OneDrive/Documentos/GitHub/Proyecto-Pepino/GGJ_Pepino
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [31344] Host "[IP] 172.16.75.86 [Port] 0 [Flags] 2 [Guid] 2488131710 [EditorId] 2488131710 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-IB0SQ0OP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [24708] Host "[IP] 192.168.1.83 [Port] 0 [Flags] 2 [Guid] 3860909816 [EditorId] 3860909816 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-6FNSQHOC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [31344] Host "[IP] 172.16.75.86 [Port] 0 [Flags] 2 [Guid] 2488131710 [EditorId] 2488131710 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-IB0SQ0OP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [24708] Host "[IP] 192.168.1.83 [Port] 0 [Flags] 2 [Guid] 3860909816 [EditorId] 3860909816 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-6FNSQHOC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 135.09 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 95.50 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.18f1 (3129e69bc0c7)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/matia/OneDrive/Documentos/GitHub/Proyecto-Pepino/GGJ_Pepino/Assets
+[Subsystems] Discovering subsystems at path C:/Users/Juan Pablo/Documents/GitHub/Proyecto-Pepino/GGJ_Pepino/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: Intel(R) Iris(R) Xe Graphics (ID=0x9a49)
-    Vendor:   Intel
-    VRAM:     3995 MB
-    Driver:   30.0.101.1692
+    Renderer: NVIDIA GeForce RTX 3070 Laptop GPU (ID=0x24dd)
+    Vendor:   NVIDIA
+    VRAM:     8044 MB
+    Driver:   30.0.15.1236
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56968
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56972
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.011749 seconds.
+Registered in 0.007285 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 150.59 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 99.61 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.068 seconds
+- Completed reload, in  0.587 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1069ms)
-		BeginReloadAssembly (134ms)
+	ReloadAssembly (587ms)
+		BeginReloadAssembly (63ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (780ms)
-			LoadAssemblies (130ms)
+		EndReloadAssembly (429ms)
+			LoadAssemblies (61ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (194ms)
+			SetupTypeCache (80ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (474ms)
+			RebuildScriptCaches (20ms)
+			SetupLoadedEditorAssemblies (283ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (151ms)
+				RefreshPlugins (100ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (234ms)
-				ProcessInitializeOnLoadMethodAttributes (78ms)
+				ProcessInitializeOnLoadAttributes (134ms)
+				ProcessInitializeOnLoadMethodAttributes (42ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.014420 seconds.
+Registered in 0.007756 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\matia\OneDrive\Documentos\GitHub\Proyecto-Pepino\GGJ_Pepino\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\matia\OneDrive\Documentos\GitHub\Proyecto-Pepino\GGJ_Pepino\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Juan Pablo\Documents\GitHub\Proyecto-Pepino\GGJ_Pepino\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Juan Pablo\Documents\GitHub\Proyecto-Pepino\GGJ_Pepino\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 150.32 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 114.74 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.496 seconds
+- Completed reload, in  1.176 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2498ms)
-		BeginReloadAssembly (196ms)
+	ReloadAssembly (1177ms)
+		BeginReloadAssembly (104ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (15ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (2085ms)
-			LoadAssemblies (198ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (966ms)
+			LoadAssemblies (83ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (517ms)
+			SetupTypeCache (237ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (109ms)
-			SetupLoadedEditorAssemblies (1117ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (550ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (150ms)
-				BeforeProcessingInitializeOnLoad (238ms)
-				ProcessInitializeOnLoadAttributes (510ms)
-				ProcessInitializeOnLoadMethodAttributes (198ms)
-				AfterProcessingInitializeOnLoad (11ms)
+				RefreshPlugins (115ms)
+				BeforeProcessingInitializeOnLoad (109ms)
+				ProcessInitializeOnLoadAttributes (233ms)
+				ProcessInitializeOnLoadMethodAttributes (81ms)
+				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 5.70 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.91 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5217 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 40 unused Assets / (0.7 MB). Loaded Objects now: 5672.
-Memory consumption went from 205.6 MB to 204.9 MB.
-Total: 26.965500 ms (FindLiveObjects: 2.958000 ms CreateObjectMapping: 2.673200 ms MarkObjects: 11.835100 ms  DeleteObjects: 9.223600 ms)
+Unloading 5226 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 40 unused Assets / (0.7 MB). Loaded Objects now: 5681.
+Memory consumption went from 206.1 MB to 205.4 MB.
+Total: 3.711900 ms (FindLiveObjects: 0.446600 ms CreateObjectMapping: 0.161000 ms MarkObjects: 2.788800 ms  DeleteObjects: 0.313500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -164,64 +164,59 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 38603.920327 seconds.
-  path: Assets/Scripts/MovimientoEnemigos/EnemigoA
-  artifactKey: Guid(9c85c80e4218c4b4999d167c14847b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MovimientoEnemigos/EnemigoA using Guid(9c85c80e4218c4b4999d167c14847b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3af24ec04ee080e40798179ec965ae92') in 0.038920 seconds 
+  Time since last request: 59260.157188 seconds.
+  path: Assets/Art/Sprites/IcePepinoWalk.png
+  artifactKey: Guid(9d1b10e48f46c2f459dba5c37dec0c80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/IcePepinoWalk.png using Guid(9d1b10e48f46c2f459dba5c37dec0c80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54c382d3d41486581a3c2d65ef243706') in 0.103866 seconds 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008326 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\matia\OneDrive\Documentos\GitHub\Proyecto-Pepino\GGJ_Pepino\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\matia\OneDrive\Documentos\GitHub\Proyecto-Pepino\GGJ_Pepino\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.28 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.517 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1518ms)
-		BeginReloadAssembly (221ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (11ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (52ms)
-		EndReloadAssembly (1174ms)
-			LoadAssemblies (160ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (375ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (67ms)
-			SetupLoadedEditorAssemblies (563ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (25ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (128ms)
-				ProcessInitializeOnLoadAttributes (291ms)
-				ProcessInitializeOnLoadMethodAttributes (104ms)
-				AfterProcessingInitializeOnLoad (12ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 6.65 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5124 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (0.7 MB). Loaded Objects now: 5676.
-Memory consumption went from 196.3 MB to 195.6 MB.
-Total: 5.426300 ms (FindLiveObjects: 0.607000 ms CreateObjectMapping: 0.265100 ms MarkObjects: 4.141500 ms  DeleteObjects: 0.410700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Art/TestAssets
+  artifactKey: Guid(03065da11c6cbcc4e8ba3cf71fc08570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/TestAssets using Guid(03065da11c6cbcc4e8ba3cf71fc08570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f209a037879d9480ac80b93b9669dd31') in 0.008693 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Art/Sprites/PepinoMalHeridoWalk.png
+  artifactKey: Guid(4c0175839080e3e4ba6834fc7ee73ccc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/PepinoMalHeridoWalk.png using Guid(4c0175839080e3e4ba6834fc7ee73ccc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d4ee52008f24a5d4b26152faaf7f22a') in 0.020649 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Art/Sprites/IcePepinoPlanting.png
+  artifactKey: Guid(26f8d1bc855751544ad81b2162821df3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/IcePepinoPlanting.png using Guid(26f8d1bc855751544ad81b2162821df3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b35c34f511f8fd51ec65e793e164948b') in 0.018461 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Art/Sprites/GroundRoots.png
+  artifactKey: Guid(8b4f58ae1fd0d4b4bb188142cdc61d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/GroundRoots.png using Guid(8b4f58ae1fd0d4b4bb188142cdc61d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c394bbcf3d74114a2a4dab91e25b90e5') in 0.016841 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Art/Sprites/PeraJefe-Sheet.png
+  artifactKey: Guid(00dd92429c2620648a12cc694343c28a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/PeraJefe-Sheet.png using Guid(00dd92429c2620648a12cc694343c28a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '312903f01fc4e41aefcbeab806e556c7') in 0.019932 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Art/Sprites/PepinoPlanting.png
+  artifactKey: Guid(9e08188e6f9200143beb657a69d32f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/PepinoPlanting.png using Guid(9e08188e6f9200143beb657a69d32f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef8245ff30971a0d427980a80ce89c9c') in 0.020437 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Art/Sprites/FireRoots.png
+  artifactKey: Guid(253ebbfae332fc448adba144c433158c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/FireRoots.png using Guid(253ebbfae332fc448adba144c433158c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42ded79067b48972017f55064f24f656') in 0.020543 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Art/Sprites/IcePepinoJump.png
+  artifactKey: Guid(63638853b17803643a7c0ceaa8078376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sprites/IcePepinoJump.png using Guid(63638853b17803643a7c0ceaa8078376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '223be003dec489e035f46deb878c4a8c') in 0.018420 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

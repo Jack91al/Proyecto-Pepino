@@ -16,7 +16,8 @@ public class PlayerController : MonoBehaviour
         Running,
         Jumping,
         Attack,
-        Planting
+        Planting,
+        Dying
     }
 
     public enum PlayerPower
@@ -24,7 +25,7 @@ public class PlayerController : MonoBehaviour
         Normal,
         Fuego,
         Hielo,
-        Tierra
+        Roca
     }
 
     public PlayerState playerState;
@@ -38,7 +39,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        SwitchAnimator();
     }
 
     public void StatusSwitch(PlayerState newState)
@@ -49,28 +50,88 @@ public class PlayerController : MonoBehaviour
         {
             case PlayerState.Idle:
                 MovePersonaje.instance.IAmMove = true;
+                MovePersonaje.instance.SetAnimation("Idle");
+
                 break;
 
             case PlayerState.Running:
                 MovePersonaje.instance.IAmMove = true;
+                MovePersonaje.instance.SetAnimation("Walk");
                 break;
 
             case PlayerState.Jumping:
                 MovePersonaje.instance.IAmMove = true;
+                MovePersonaje.instance.SetAnimation("Jump");
                 break;
 
             case PlayerState.Attack:
                 MovePersonaje.instance.IAmMove = false;
+                MovePersonaje.instance.SetAnimation("Attack");
                 break;
 
             case PlayerState.Planting:
-
                 MovePersonaje.instance.IAmMove = false;
+                MovePersonaje.instance.SetAnimation("Planting");
+                break;
 
+            case PlayerState.Dying:
+                MovePersonaje.instance.IAmMove = false;
+                MovePersonaje.instance.SetAnimation("Death");
                 break;
 
         }
     }
+
+    public void SwitchAnimator()
+    {
+        switch(playerPower)
+        {
+            case PlayerPower.Normal:
+
+                MovePersonaje.instance.animNormal.gameObject.SetActive(true);
+                MovePersonaje.instance.animFuego.gameObject.SetActive(false);
+                MovePersonaje.instance.animHielo.gameObject.SetActive(false);
+                MovePersonaje.instance.animRoca.gameObject.SetActive(false);
+
+                MovePersonaje.instance.animActual = MovePersonaje.instance.animNormal;
+
+                break;
+
+            case PlayerPower.Fuego:
+
+                MovePersonaje.instance.animNormal.gameObject.SetActive(false);
+                MovePersonaje.instance.animFuego.gameObject.SetActive(true);
+                MovePersonaje.instance.animHielo.gameObject.SetActive(false);
+                MovePersonaje.instance.animRoca.gameObject.SetActive(false);
+
+                MovePersonaje.instance.animActual = MovePersonaje.instance.animFuego;
+
+                break;
+
+            case PlayerPower.Hielo:
+
+                MovePersonaje.instance.animNormal.gameObject.SetActive(false);
+                MovePersonaje.instance.animFuego.gameObject.SetActive(false);
+                MovePersonaje.instance.animHielo.gameObject.SetActive(true);
+                MovePersonaje.instance.animRoca.gameObject.SetActive(false);
+
+                MovePersonaje.instance.animActual = MovePersonaje.instance.animHielo;
+
+                break;
+
+            case PlayerPower.Roca:
+
+                MovePersonaje.instance.animNormal.gameObject.SetActive(false);
+                MovePersonaje.instance.animFuego.gameObject.SetActive(false);
+                MovePersonaje.instance.animHielo.gameObject.SetActive(false);
+                MovePersonaje.instance.animRoca.gameObject.SetActive(true);
+
+                MovePersonaje.instance.animActual = MovePersonaje.instance.animRoca;
+
+                break;
+        }
+    }
+
     public void planting()
     {
         PlayerController.instance.StatusSwitch(PlayerState.Planting);
